@@ -1,0 +1,260 @@
+#wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 36px 40px;
+  flex-direction: column;
+}
+
+#container {
+  border-radius: 10px;
+  display: flex;
+  max-width: 1840px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #EBF0FA;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 72px;
+  max-width: 538px;
+}
+
+h1 {
+  font-family: Manrope;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 48px;
+  text-align: left;
+  color: #1F4284;
+  margin-bottom: 18px;
+}
+
+h3 {
+  font-family: Manrope;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32.78px;
+  text-align: left;
+  color: #323232;
+  margin-bottom: 18px;
+}
+
+p {
+  width: 511px;
+  font-family: Manrope;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27.2px;
+  text-align: left;
+  color: #727272;
+  margin-bottom: 36px;
+}
+
+#mainImg {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#smallMainImg {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: none;
+}
+
+#tryButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+  color: #FFFFFF;
+  background-color: #244C98;
+  border-radius: 34px;
+  padding: 12px;
+  width: 340px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28.8px;
+  text-align: left;
+  transition: .2s;
+}
+
+#tryButton:hover {
+  background-color: #3e5c92;
+}
+
+#tryButton span {
+  margin-left: 20px;
+}
+
+#modalWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100dvh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#modalWindow {
+  background-color: #F0F4FC;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding: 24px;
+}
+
+#closeBtnWrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#closeBtn {
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="email"],
+input[type="password"] {
+  cursor: default;
+  width: 452px;
+  padding: 10px;
+  background-color: #D7E2F6;
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24.59px;
+  text-align: left;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24.59px;
+  text-align: left;
+  color: #1F4284;
+}
+
+#checkBox {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+#recover {
+  font-family: Manrope;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 27.32px;
+  text-align: left;
+  color: #244C98;
+  margin-bottom: 36px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 18px 12px 18px 12px;
+  border-radius: 4px;
+  background-color: #244C98;
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28.8px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+form {
+  margin-bottom: 4px;
+}
+
+#registerBtn {
+  width: 100%;
+  padding: 18px 12px 18px 12px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid #244C98;
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28.8px;
+  text-align: center;
+  color: #244C98;
+}
+
+@media (max-width: 1620px) {
+  #mainImg {
+    display: none;
+  }
+
+  #smallMainImg {
+    display: block;
+  }
+}
+
+@media (max-width: 1360px) {
+  #wrapper {
+    padding: 24px;
+  }
+
+  #container {
+    flex-direction: column;
+  }
+
+  #content {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    align-items: flex-start;
+  }
+
+  p {
+    width: 100%;
+    padding-right: 24px;
+  }
+
+  #mainImg {
+    display: block;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+
+  #smallMainImg {
+    display: none;
+  }
+}
+
+@media (max-width: 430px) {
+  #wrapper {
+    padding-top: 14px;
+  }
+
+  #tryButton {
+    width: 279px;
+  }
+
+  #tryButton span {
+    margin-left: 10px;
+    font-family: Manrope;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+  }
+}

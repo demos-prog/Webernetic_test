@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./nullStyles.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>Test Task</title>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="container">
+      <div id="content">
+        <h1>Демо-версия</h1>
+        <p>За 18 лет деятельности было реализовано более 500 крупных, а так же, не менее 2500 средних и малых проектов.
+          Используя
+          знания и накопленный опыт мы можем предложить</p>
+        <button type="button" id="tryButton">
+          <span>Попробовать бесплатно</span>
+          <img src="./assets/arrow.png" alt="arrow">
+        </button>
+      </div>
+      <img id="mainImg" src="./assets/image 15.png" alt="mainImg">
+      <img id="smallMainImg" src="./assets/smallMainImg.png" alt="smallMainImg">
+    </div>
+
+    <div id="modalWrapper">
+      <div id="modalWindow">
+        <div id="closeBtnWrap">
+          <img id="closeBtn" src="./assets/closeIcon.png" alt="closeImg">
+        </div>
+        <h3>Войти в систему</h3>
+
+        <form>
+          <input placeholder="Email/Телефон" type="email" name="email" id="email">
+          <input placeholder="Пароль" type="password" name="password" id="password">
+          <label id="checkBox">
+            <input type="checkbox" name="remember" id="remember">
+            Запомнить пароль
+          </label>
+          <a href="#" id="recover" rel="noopener noreferrer">Восстановить</a>
+          <input type="submit" value="Войти">
+        </form>
+        <a href="#" id="registerBtn" rel="noopener noreferrer">Зарегистрироваться</a>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
