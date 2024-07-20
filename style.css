@@ -240,6 +240,18 @@ form {
   }
 }
 
+@media (max-width: 550px) {
+  #modalWindow {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    width: 80dvw;
+  }
+}
+
 @media (max-width: 430px) {
   #wrapper {
     padding-top: 14px;
